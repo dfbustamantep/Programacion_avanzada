@@ -20,10 +20,14 @@ public class Cliente {
 
     public Cliente() {
         try {
+            //se establece una conexion al servidor usando un socket 
             clientecin = new Socket("localhost", 33);
             System.out.println("Conectado al server");
+            //flujo de salida de datos desde el socket para enviar datos al servidor
             OutputStream salida = clientecin.getOutputStream();
+            //permite mandar los datos de manera mas conveniente
             DataOutputStream sale = new DataOutputStream(salida);
+            //se envia el mensaje
             sale.writeUTF("Soy el cliente");
         } catch (Exception e) {
             System.out.println(e);
