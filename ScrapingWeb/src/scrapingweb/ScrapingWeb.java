@@ -13,6 +13,7 @@ import org.jsoup.select.Elements;
  *
  * @author DBustamanteP
  */
+
 public class ScrapingWeb {
     
     //El codigo recibe como parametro la url de una pagina web
@@ -37,8 +38,8 @@ public class ScrapingWeb {
        // Elements programas = ScrapingWeb.getHTML(URL);
         
         
-        System.out.println("Programas de pregrado\n");
-        
+        System.out.println("\t\tProgramas de pregrado");
+        lineas();
         //Elements son nodos que vamos a estar recorriendo que pertenencen aprogramas
         for(Element p:programas){
             
@@ -47,7 +48,8 @@ public class ScrapingWeb {
             //<div class="content-box lista-none icon-box col-sm-6 col-xs-12 icon-file">
             System.out.println(" Nombre del programa academico "+nombrePrograma);
             System.out.println(facultad);
-            System.out.println("");
+            System.out.println("\n");
+            lineas();
             //System.out.println(nombreCoorinador);
            /*try{
                 String nombrePrograma = p.select(".field-title").text();
@@ -59,6 +61,9 @@ public class ScrapingWeb {
             }*/
            
         }
+    }
+    public static void lineas(){
+        System.out.println("-------------------------------------------------------------------------------------------------");
     }
     
 }
