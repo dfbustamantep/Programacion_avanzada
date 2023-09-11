@@ -44,7 +44,7 @@ public class EscucharServer extends Thread{
             }
         }
         catch(Exception e){
-            System.out.println("Error run");
+            System.out.println("Error run e "+e);
         }
     }
 }

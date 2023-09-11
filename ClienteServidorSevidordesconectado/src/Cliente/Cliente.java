@@ -26,7 +26,10 @@ public class Cliente {
     public static OutputStream salida = null;
     //nos permite escribir datos primitivos en la salida de datos
     public static DataOutputStream sale= null;
+    public static String nombre;
+
     
+            
     public Cliente(){
         try{
             //conexion con el servidor en localhost(nuestra maquina) en el puerto 33
@@ -46,6 +49,7 @@ public class Cliente {
             //System.out.println("Error cliente "+e);
             System.out.println("El cliente es el servidor");
             CLienteEsServidor();
+            
         }
     }
     
@@ -79,6 +83,13 @@ public class Cliente {
         }
     }
         
+    public static String getNombre() {
+        return nombre;
+    }
+
+    public static void setNombre(String nombre) {
+        Cliente.nombre = nombre;
+    }
 public static void main(String[] args) {
         Cliente objCliente = new Cliente();
         Ventana objVentana = new Ventana();
