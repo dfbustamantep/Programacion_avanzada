@@ -1,15 +1,25 @@
+//indica que el documento esta escrito en HTML5
 <!DOCTYPE html>
+
+//comienzo del documento html
 <html>
+	
 	<head>
+		//Titulo de la pagina que se muestra en la barra de titulo del navegador
 		<title>Drag and Drop 1</title>
+		//importamos dos archivos JS
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
 	</head>
+
+	//contenido visible de la pagian erb
 	<body>
+		//el id es el identificador unico del elemento style estilos en linea que establecen el colo y el tamaño del elemebnto
 		  <div id="draggable1" style="width:100px;height: 100px; background: red" class="draggable"></div>
 		  <div id="draggable2" style="width:100px;height: 100px; background: blue" class="draggable"></div>
 		  <div id="droppable" class="droppable" style="width:800px; height:200px; border: 3px #000000 dashed;"></div>
 
+	//se inicia una seccion de codigo javascript
 	  <script type="text/javascript">
 	    $(document).ready(function(){
         	$("#draggable1").mouseover(function(){  
