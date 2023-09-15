@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drag and Drop 1</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		  <div id="draggable1" style="width:100px;height: 100px; background: red" class="draggable"></div>
+		  <div id="draggable2" style="width:100px;height: 100px; background: blue" class="draggable"></div>
+		  <div id="droppable" class="droppable" style="width:800px; height:200px; border: 3px #000000 dashed;"></div>
+
+	  <script type="text/javascript">
+	    $(document).ready(function(){
+        	$("#draggable1").mouseover(function(){  
+            	$("#draggable1").css("background-color", "lightgreen");  
+        	});
+	        $("#draggable1").mouseout(function(){  
+        	    $("#draggable1").css("background-color", "red");  
+	        });
+	        $("#draggable1" ).on("mousedown", function() {
+        	    $("#draggable1").css("background-color", "pink");
+	        });
+
+
+	        $("#draggable2").mouseover(function(){  
+        	    $("#draggable2").css("background-color", "green");  
+	        });
+        	$("#draggable2").mouseout(function(){  
+	            $("#draggable2").css("background-color", "blue");  
+        	});
+
+		$(".draggable").draggable();
+		$(".droppable").droppable({
+		drop: function(e, ui){
+		alert(ui.draggable.attr('id'));
+		$("#draggable1").offset({top: 10, left: 8});
+		}
+		});
+	    });
+	</script>
+
+	</body>
+</html>
