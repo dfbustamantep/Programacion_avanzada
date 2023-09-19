@@ -1,36 +1,43 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package scrapingweb;
+
 import java.io.IOException;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 import static scrapingweb.ScrapingWebPregrado.lineas;
+
 /**
  *
  * @author DBustamanteP
  */
 public class Menu {
+    //atributos a donde llegan la URL de las paginas web
     private String URLPregrados;
     private String URLPosgrados;
-    private ScrapingWebPregrado sw;
-    private ScrapingWebPosgrado swp;
+    
+    //Instanciamos objetos de nuestras clases de Scraping WEb 
+    private ScrapingWebPregrado swPE;
+    private ScrapingWebPosgrado swPS;
 
     public Menu(String URLPregrados, String URLPosgrados, ScrapingWebPregrado sw, ScrapingWebPosgrado swp) {
         this.URLPregrados = URLPregrados;
         this.URLPosgrados = URLPosgrados;
-        this.sw = sw;
-        this.swp = swp;
+        this.swPE = sw;
+        this.swPS = swp;
     }
-    
-    public void menu() throws IOException, InterruptedException{
-        Scanner opc = new Scanner(System.in);
-        int opcion;
+
+    public void menu() throws IOException, InterruptedException {
+        //Scanner para cuando mostramos el menu por consola
+        //Scanner opc = new Scanner(System.in);
         
-        do{
+        //Vatriable que hace refgerencia a la opcion que el usuario escoge del menu
+        int opcion;
+
+        //repetimos el mostrar y ejecutar las ocpiones del munu mientras el usuario digite una ocpion difeerente de 4
+        do {
+            //menu en consola
             //lineas();
-           /* System.out.println("\t\tMenu");
+            /* System.out.println("\t\tMenu");
             lineas();
             System.out.println("1-Mostrar programas de pregrado de la Universidad Distrital");
             System.out.println("2-Mostrar programas de posgrado de la Universidad Distrital");
@@ -39,20 +46,23 @@ public class Menu {
             lineas();
             System.out.println("Digite la opcion que desea: ");
             opcion=opc.nextInt();
-            */
-           opcion=Integer.parseInt(JOptionPane.showInputDialog("\t\tMenu\n1-Mostrar programas de pregrado de la Universidad Distrital\n2-Mostrar programas de posgrado de la Universidad Distrital\n3-Mostrar todos los programas de la Universidad Distrital\n4-Salir\n\nDigite la opcion que desea: "));
+             */
+
+            //menu con JOptionPane
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("\t\tMenu\n1-Mostrar programas de pregrado de la Universidad Distrital\n2-Mostrar programas de posgrado de la Universidad Distrital\n3-Mostrar todos los programas de la Universidad Distrital\n4-Salir\n\nDigite la opcion que desea: "));
             
-            switch(opcion){
+            //Switch con respecto a la opcion que dijite el usuario
+            switch (opcion) {
                 case 1:
-                    sw.scraping(URLPregrados);
+                    swPE.scraping(URLPregrados);
                     break;
                 case 2:
-                    swp.scraping(URLPosgrados);
+                    swPS.scraping(URLPosgrados);
                     break;
                 case 3:
-                    sw.scraping(URLPregrados);
+                    swPE.scraping(URLPregrados);
                     lineas();
-                    swp.scraping(URLPosgrados);
+                    swPS.scraping(URLPosgrados);
                     break;
                 case 4:
                     System.out.println("Saliendo");
@@ -60,8 +70,8 @@ public class Menu {
                 default:
                     System.out.println("Digite una opcion valida");
                     break;
-                    
+
             }
-            }while(opcion!=4);
+        } while (opcion != 4);
     }
 }
