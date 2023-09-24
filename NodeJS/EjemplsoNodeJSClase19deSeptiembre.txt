@@ -1,0 +1,230 @@
+/*
+//Promesas
+//creamos una promesa
+const miPromesa =new Promise((resolve,reject)=>{
+    let condicion = true;
+//verificamos la condicion		
+    if(condicion){
+        resolve("voy a cuidar a mis hermanos menores");
+    }
+    else{
+        reject("Estoy estudiando en smart");
+    
+    }
+});
+miPromesa.then(data=>{
+    console.log(data)
+}).catch(err=>{
+    console.log(err)
+})
+*/
+
+//------------------------------------------------------------------
+//ejemplo 1
+/*
+//creacion de 2 variables en nodejs
+const nombre = 'Daniel'
+const  edad = '19'
+//creamos un objeto llamado obj
+const obj = {
+
+    nombre : nombre,
+    edad : edad 
+}
+//imprimimos en consola
+console.log(obj.nombre)
+console.log(obj.edad)
+*/
+
+//------------------------------------------------------------------
+//ejemplo 2
+/*
+//declaramos 2 variables
+const nombre = 'Daniel'
+const  edad = '19'
+//creamos un objeto
+const obj = {nombre, edad}
+//imprimimos en consola
+console.log(obj.nombre)/*
+
+//------------------------------------------------------------------
+//ejemplo 3
+/*
+//declaramos una funcion que recibe dos parametros y retorna la suma de estos 2
+function suma(a,b) {
+    return a+b;
+}
+console.log(suma(1,12));/*
+
+//------------------------------------------------------------------
+// ejemplo 4
+//definicion de funcion utilizando una expresion de funcion flecha,forma mas simplificada 
+//el ejemplo 3
+/*
+const suma=(a,b) => {
+    return a+b;
+}
+console.log(suma(1,12));*/
+
+//------------------------------------------------------------------
+//ejemplo 5
+//version mas simplificada usando funcion de felcha para una funcion que realiza una suma
+/*
+//definicion de funcion flecha,el valor de retorno esta implicitamente definido
+const suma=(a,b) =>  a+b;
+//llamamos e imprimimos la funcion
+console.log(suma(1,12));
+/*
+
+//------------------------------------------------------------------
+//ejemplo 6
+//ejemplo de como utilizar setTimeout 
+/*
+//definimos la funcion
+function saludar() {
+    console.log ("buen dia ")
+}
+//usamops setTimeout funcion de JS que permite programar la ejecucion de una funcion desoues de cierto tiempo en milisengundos
+setTimeout(saludar,5000)
+*/
+
+//------------------------------------------------------------------
+/ejemplo 7
+/*
+//definimos dos funciones
+function saludar1() {
+    console.log ("buen dia ")
+}
+function saludar2() {
+    console.log ("buena noche ")
+}
+//llamamos las 2 funciones
+saludar1();
+saludar2();
+*/
+
+//------------------------------------------------------------------
+//ejemplo 8
+/*
+//usamos setTimeout con una funcion flecha como argumento
+setTimeout (() => {
+console.log("callback as a fucntion");    
+},1000)
+*/
+
+//------------------------------------------------------------------
+//ejemplo 9
+/*
+//tenemos 2 fucniones saludar1 tiene como parametro saludar2
+function saludar1(saludar2) {
+    console.log ("buen dia ")
+}
+function saludar2() {
+    console.log ("buena noche ")
+}
+saludar1();
+*/
+
+//------------------------------------------------------------------
+//ejemplo 10
+/*
+//codgio que usa una funcion asincrona sumaAsync y usamos el setTimeout
+//definicion de funcion asiuncrona para suma,con 3 parametros
+function sumaAsync(a, b, callback) {
+    setTimeout(function(){
+        callback(a+b);
+    },1000);
+}
+    console.log('Antes de la llamada asincrona');
+//llamamos a la funcion asincron	
+    sumaAsync(2,3, function(resultFinal)
+    {
+    console.log('resultado '+ resultFinal);  
+    }); console.log('despues de la llamada asincrona'); 
+  */ 
+
+//------------------------------------------------------------------
+//ejemplo 11
+/*
+function sumaAsync(a, b, callback) {
+    setTimeout(function(){
+        callback(a+b);
+    },100);
+}
+    console.log('Antes de la llamada asincrona');
+    sumaAsync(2,3, function(resultFinal)
+    {
+    setTimeout (() => {
+    console.log('resultado '+ resultFinal);     
+    },3000);
+    }); console.log('despues de la llamada asincrona'); 
+*/
+
+//------------------------------------------------------------------
+*/
+//ejemplo 12
+/*
+//codigo en JS ysabdi promesas
+//creamos nuestra prmesa
+const miPromesa = new Promise((resolve, reject) => {
+    let condicion = true;
+//vetificamos una condicion
+    if (condicion) {
+        resolve("Promesa cumplida");
+    }else{
+
+        reject("Promesa no cumplida");
+    }
+    
+});
+
+//usamos la promesa
+//then es cuando la promesa es exitosa
+miPromesa.then(data=>{
+    console.log(data);
+//catch se ejecuta cunado la promesa es rechazada
+}).catch(err=>{
+    console.log(err);
+});
+*/
+
+//------------------------------------------------------------------
+//ejemplo 13
+//uso de promesas
+//creamos la primera promesa
+const miPromesa1 = new Promise((resolve, reject) => {
+    let condicion = true;
+    if (condicion) {        
+        resolve("Promesa 1 cumplida");
+    }else{
+        reject("Promesa 1 no cumplida");
+    }   
+});
+
+//creamos la segunda promesa
+const miPromesa2 = new Promise((resolve, reject) => {
+    let condicion = true;
+//si la condicion es verdadera llamamos a miPromesa1 y si miPromesa1 se resuelve
+//miPromesa2 se resuleve y agrega la cadena de Promesa 2 cumplida
+    if (condicion) {
+    miPromesa1.then(data=>{
+   resolve("Promesa 2 cumplida "+ data);
+}).catch(err=>{
+    console.log(err);
+});      
+    }else{
+        reject("Promesa 2 no cumplida");
+    }   
+});
+
+//------------------------------------------------------------------
+//compilador nodejs usado
+//https://www.tutorialspoint.com/execute_nodejs_online.php
+
+//el then se ejecuta cuando miPromesa2 se resuelve exitosamente
+miPromesa2.then(data =>{
+    console.log(data);
+//el cathc captura cualquier error que se gener
+}).catch(err => {
+    console.log(err); 
+});
