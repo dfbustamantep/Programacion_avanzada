@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Enlaces a las hojas de estilo y scripts de Leaflet y Leaflet Routing Machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@3/dist/leaflet-routing-machine.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.15/leaflet-routing-machine.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.15/leaflet-routing-machine.min.css" />
+
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+            background-color: #2c3e50;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-alternatives-container .leaflet-routing-alt {
+            background-color: #2c3e50;
+            border: 1px solid #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-alternatives-container .leaflet-routing-alt:hover {
+            background-color: #34495e;
+            border: 1px solid #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-alternatives-container .leaflet-routing-alt-icon {
+            border: 1px solid #fff;
+            background-color: #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-alternatives-container .leaflet-routing-alt-icon.leaflet-routing-selected {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-alternatives-container .leaflet-routing-alt-label {
+            color: #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-directions-container .leaflet-routing-instructions-container .leaflet-routing-alt-instruction {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-directions-container .leaflet-routing-instructions-container .leaflet-routing-alt-instruction.leaflet-routing-selected {
+            background-color: #34495e;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-directions-container .leaflet-routing-instructions-container .leaflet-routing-instruction {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-directions-container .leaflet-routing-instructions-container .leaflet-routing-instruction.leaflet-routing-selected {
+            background-color: #34495e;
+        }
+       
+        .leaflet-routing-container .leaflet-routing-directions-container .leaflet-routing-instructions-container .leaflet-routing-instruction.leaflet-routing-end {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor para el mapa -->
+    <div id="map"></div>
+    <script>
+        // Inicialización del mapa
+        var map = L.map("map").setView([4.5793, -74.1579], 14);
+        map.scrollWheelZoom.disable();
+
+        // Capa de mapa base de OpenStreetMap
+        // Define el mapa base
+        L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        // Añade los marcadores
+        L.marker([4.5793, -74.1579]).addTo(map).bindPopup("Facultad Tecnológica");
+        L.marker([4.62802, -74.06581]).addTo(map).bindPopup("Facultad de Ingenieria");
+
+        // Añade la ruta como una línea
+        L.Routing.control({
+            waypoints: [
+                L.latLng(4.5793, -74.1579), // Coordenadas de la Facultad Tecnológica
+                L.latLng(4.62802, -74.06581) // Coordenadas de la Facultad de Ingenieria
+            ],
+            lineOptions: {
+                styles: [{
+                    color: 'purple',
+                    opacity: 0.6,
+                    weight: 6
+                }]
+            }
+        }).addTo(map);
+    </script>
+</body>
+
+
+</html>
