@@ -1,0 +1,191 @@
+Historial Académico Daniel Felipe Bustamante Perez
+--------------------------------------------------------------------------------
+Asignatura: 1
+Nombre: CÁLCULO DIFERENCIAL
+Nota: 41
+Creditos: 4
+Clasificacion: OB
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 4
+Nombre: CÁTEDRA FRANCISCO JOSÉ DE CALDAS
+Nota: 36
+Creditos: 1
+Clasificacion: OC
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 9
+Nombre: ÁLGEBRA LINEAL
+Nota: 36
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 12
+Nombre: CÁTEDRA DEMOCRACIA Y CIUDADANÍA
+Nota: 44
+Creditos: 1
+Clasificacion: OC
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1054
+Nombre: PRODUCCIÓN Y COMPRENSIÓN DE TEXTOS I
+Nota: 44
+Creditos: 3
+Clasificacion: OC
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1507
+Nombre: INTRODUCCIÓN A ALGORITMOS
+Nota: 32
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1508
+Nombre: LÓGICA MATEMÁTICA
+Nota: 43
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 3
+Nombre: FÍSICA I: MECÁNICA NEWTONIANA
+Nota: 36
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 7
+Nombre: CÁLCULO INTEGRAL
+Nota: 34
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 1056
+Nombre: PRODUCCIÓN Y COMPRENSIÓN DE TEXTOS II
+Nota: 43
+Creditos: 2
+Clasificacion: OC
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 1072
+Nombre: ADMINISTRACIÓN
+Nota: 37
+Creditos: 3
+Clasificacion: OC
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 1082
+Nombre: CÁTEDRA DE CONTEXTO
+Nota: 40
+Creditos: 1
+Clasificacion: OC
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 1513
+Nombre: ESTRUCTURA DE DATOS
+Nota: 36
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 1514
+Nombre: PROGRAMACIÓN ORIENTADA A OBJETOS
+Nota: 39
+Creditos: 3
+Clasificacion: OB
+Año: 2022
+Periodo: 3
+Observacion: 
+----------------------------------------
+Asignatura: 13
+Nombre: FÍSICA II: ELECTROMAGNETISMO
+Nota: 32
+Creditos: 3
+Clasificacion: OB
+Año: 2023
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1060
+Nombre: CIENCIA TECNOLOGÍA Y SOCIEDAD
+Nota: 50
+Creditos: 2
+Clasificacion: OC
+Año: 2023
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1509
+Nombre: FUNDAMENTOS DE ORGANIZACIÓN
+Nota: 36
+Creditos: 2
+Clasificacion: EI
+Año: 2023
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1518
+Nombre: PROGRAMACIÓN MULTINIVEL
+Nota: 41
+Creditos: 3
+Clasificacion: OB
+Año: 2023
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1519
+Nombre: BASES DE DATOS
+Nota: 32
+Creditos: 3
+Clasificacion: OB
+Año: 2023
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 9901
+Nombre: SEGUNDA LENGUA I - INGLÉS
+Nota: 47
+Creditos: 2
+Clasificacion: OC
+Año: 2023
+Periodo: 1
+Observacion: 
+----------------------------------------
+Asignatura: 1511
+Nombre: TIC'S EN LAS ORGANIZACIONES
+Nota: 44
+Creditos: 2
+Clasificacion: EI
+Año: 2023
+Periodo: 2
+Observacion: 
+----------------------------------------

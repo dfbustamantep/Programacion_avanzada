@@ -12,5 +12,6 @@ public class main {
     public static void main(String[] args) {
         ScrapingCondor sC = new ScrapingCondor();
         sC.scraping("https://estudiantes.portaloas.udistrital.edu.co/appserv/");
+        //sC.scraping("https://estudiantes.portaloas.udistrital.edu.co/appserv/estudianteCreditos/estudianteCreditos.php");
     }
 }
