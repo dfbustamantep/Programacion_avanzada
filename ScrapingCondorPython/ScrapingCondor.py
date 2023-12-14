@@ -113,8 +113,8 @@ cookies = {
     '_ga': 'GA1.3.1189552335.1694267184',
     'twk_uuid_5f06483867771f3813c0af27': '%7B%22uuid%22%3A%221.92NeMew3DsFzovakCeiIpHCnoebJSGUCEpzsIAlz2H4b30yP9YBZF0O74QgoBk8Tn4X3G0lsNw9kcgUOeHbEme1F7ZgVfjpbajO9Ylvf4eqT9KdvvjpMb0ZBB4AR%22%2C%22version%22%3A3%2C%22domain%22%3A%22udistrital.edu.co%22%2C%22ts%22%3A1694392468447%7D',
     '_ga_DDY0LDR6NL': 'GS1.1.1694392467.5.1.1694392926.0.0.0',
-    'condorUDUser': '17kogohos9ufi0v60bdntat7h7',
-    'aplicativo': '669bb5e53d0de00b6fffaa75dde881b8',
+    'condorUDUser': 'hu36637scnarvdto92p4al5or4',
+    'aplicativo': '1c5089e572ab017a36d3f04d0a3f1671',
 }
 
 # Diccionario que contiene encabezados para la solicitud HTTP.
@@ -122,8 +122,8 @@ headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'Accept-Language': 'en-US,en;q=0.9,es;q=0.8',
     'Connection': 'keep-alive',
-    # 'Cookie': '_ga_BBELX6EBX1=GS1.1.1694267399.1.0.1694267399.0.0.0; _clck=1jjqhz3|2|fex|0|1347; _ga=GA1.3.1189552335.1694267184; twk_uuid_5f06483867771f3813c0af27=%7B%22uuid%22%3A%221.92NeMew3DsFzovakCeiIpHCnoebJSGUCEpzsIAlz2H4b30yP9YBZF0O74QgoBk8Tn4X3G0lsNw9kcgUOeHbEme1F7ZgVfjpbajO9Ylvf4eqT9KdvvjpMb0ZBB4AR%22%2C%22version%22%3A3%2C%22domain%22%3A%22udistrital.edu.co%22%2C%22ts%22%3A1694392468447%7D; _ga_DDY0LDR6NL=GS1.1.1694392467.5.1.1694392926.0.0.0; condorUDUser=17kogohos9ufi0v60bdntat7h7; aplicativo=669bb5e53d0de00b6fffaa75dde881b8',
-    'Referer': 'https://estudiantes.portaloas.udistrital.edu.co/appserv/estudianteCreditos/est_pag_menu.php',
+    # 'Cookie': '_ga_BBELX6EBX1=GS1.1.1694267399.1.0.1694267399.0.0.0; _clck=1jjqhz3|2|fex|0|1347; _ga=GA1.3.1189552335.1694267184; twk_uuid_5f06483867771f3813c0af27=%7B%22uuid%22%3A%221.92NeMew3DsFzovakCeiIpHCnoebJSGUCEpzsIAlz2H4b30yP9YBZF0O74QgoBk8Tn4X3G0lsNw9kcgUOeHbEme1F7ZgVfjpbajO9Ylvf4eqT9KdvvjpMb0ZBB4AR%22%2C%22version%22%3A3%2C%22domain%22%3A%22udistrital.edu.co%22%2C%22ts%22%3A1694392468447%7D; _ga_DDY0LDR6NL=GS1.1.1694392467.5.1.1694392926.0.0.0; condorUDUser=hu36637scnarvdto92p4al5or4; aplicativo=1c5089e572ab017a36d3f04d0a3f1671',
+    'Referer': 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=mClHx-m_sB_AiTKR9TQo4KhM800aJirc7LzedeOC2MMoxLtuBEfnQEofBRTIjN4TqTkp3fzwElcs3OUhaDJBfe5bstqt-Pr64EuwlKCzS-QTlLWk3QbjllMWc1dQvkLNIIjfgQ-ZDJpsqAEDWoNmBgam5RfeLF7FEm8ireekvA8Q_gOYBIb53JEsBd86wHsupy9lyzafb-NxAfzq2Nko2Q',
     'Sec-Fetch-Dest': 'frame',
     'Sec-Fetch-Mode': 'navigate',
     'Sec-Fetch-Site': 'same-origin',
@@ -137,7 +137,7 @@ headers = {
 
 # Parámetros que se incluirán en la URL de la solicitud.
 params = {
-    'index': 'mClHx-m_sB_AiTKR9TQo4KhM800aJirc7LzedeOC2MMoxLtuBEfnQEofBRTIjN4TqTkp3fzwElcs3OUhaDJBfe5bstqt-Pr64EuwlKCzS-QTlLWk3QbjllMWc1dQvkLNIIjfgQ-ZDJpsqAEDWoNmBgam5RfeLF7FEm8ireekvA8Q_gOYBIb53JEsBd86wHsupy9lyzafb-NxAfzq2Nko2Q',
+    'index': 'mClHx-m_sB_AiTKR9TQo4KhM800aJirc7LzedeOC2MMoxLtuBEfnQEofBRTIjN4TqTkp3fzwElcs3OUhaDJBfe5bstqt-Pr64EuwlKCzS-QTlLWk3QbjllMWc1dQvkLNDUJ8B-91zfzAv7gEh_6snr-ngc4Y1V6qHaM8J4t2iTE',
 }
 
 response = requests.get(
@@ -149,10 +149,10 @@ response = requests.get(
 
 soup = BeautifulSoup(response.content,"html.parser")
 
-def HistorialNotas(soup):
+def HistorialAcademico(soup):
     
     tabla = soup.find_all("table",attrs={"class":"sigma"})
-    datos = []
+    historia = []
 
     for nivel,tabla_nivel in enumerate (tabla,start=1):
         filas = tabla_nivel.find_all("tr")
@@ -169,7 +169,7 @@ def HistorialNotas(soup):
                 periodo = celdas[6].text.strip()
                 observacion = celdas[7].text.strip()
 
-                datos.append({
+                historia.append({
                     'Asignatura':asignatura,
                     'Nombre':nombre,
                     'Nota':nota,
@@ -181,7 +181,7 @@ def HistorialNotas(soup):
                 })
             #else:
              #   print("Advertencia")    
-    return datos   
+    return historia   
 
 def guardar(datos, nombre_archivo, titulo="Datos Guardados"):
     # Obtener la ruta completa del archivo en la misma carpeta del script
@@ -215,7 +215,7 @@ print("Datos")
 #print(HistorialNotas(soup))
 #pprint(HistorialNotas(soup))
 
-historial = HistorialNotas(soup)
+historial = HistorialAcademico(soup)
 
 for asignatura_info in historial:
     for clave, valor in asignatura_info.items():
@@ -223,5 +223,5 @@ for asignatura_info in historial:
     print('-' * 40)  # Separador entre asignaturas
     print()  # Línea en blanco entre asignaturas
  
-guardar(HistorialNotas(soup), 'historialAcademico.txt', titulo="Historial Académico Daniel Felipe Bustamante Perez")
-guardarExcel(HistorialNotas(soup), 'historialAcademico.xlsx', titulo="Datos Guardados")
+guardar(historial, 'historialAcademico.txt', titulo="Historial Académico Daniel Felipe Bustamante Perez")
+guardarExcel(historial, 'historialAcademico.xlsx', titulo="Datos Guardados")
